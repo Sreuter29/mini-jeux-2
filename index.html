@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mini Jeux 2</title>
+  <link rel="stylesheet" href="miniJeux.css">
+</head>
+<body>
+  <!-- dragon Slayer -->
+  <h3>Joue à Dragon slayer</h3>
+  <a href="#" onclick="javascript:startGame()">Jouer - plusieurs parties possibles</a><br><br>
+  <div class="dragon"></div>
+  <div class="unJeu">
+    <h3>Devine le nombre mystère! Clique sur le niveau que tu souhaites battre</h3>
+    <a href="#" onclick="javascript:PoM_partie(1,63)">Niveau Zéro</a><br />
+    <a href="#" onclick="javascript:PoM_partie(1,100)">Niveau Normal</a><br />
+    <a href="#" onclick="javascript:PoM_partie(0,250)">Niveau Geek</a>
+  </div>
+  <div class="voitures">
+    <h3>Attention aux collisions! Déplace la voiture jaune à l'aide des touches gauche et droite du pavé numérique</h3>
+    Collisions : <span id="info">0</span>
+    <div id="jeu">
+      <img id="fond1" alt="route 1" class="fond" src="img/route.png">
+      <img id="fond2" alt="route 2" class="fond" src="img/route.png">
+      <img id="vj" alt="voiture jaune" src="img/vj.png"> <!-- La voiture jaune -->
+      <img id="vr" alt="voiture rouge" src="img/vr.png"> <!-- La voiture rouge -->
+    </div>
+  </div>
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=es6%2CArray.isArray%2CArray.of%2CArray.from%2CArray.prototype.filter%2CArray.prototype.find%2CArray.prototype.findIndex%2CArray.prototype.forEach%2CArray.prototype.includes%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.lastIndexOf%2CArray.prototype.map%2CArray.prototype.reduce%2CArray.prototype.some%2CArray.prototype.sort%2CDate.now%2CElement.prototype.after%2CElement.prototype.append%2CElement.prototype.before%2CElement.prototype.classList%2CElement.prototype.cloneNode%2CElement.prototype.nextElementSibling%2CElement.prototype.placeholder%2CElement.prototype.previousElementSibling%2CElement.prototype.remove%2CElement.prototype.replaceWith%2CElement.prototype.scroll%2CElement.prototype.scrollBy%2CElement.prototype.scrollIntoView%2CElement.prototype.toggleAttribute%2CHTMLDocument%2CJSON%2CMap%2CMath.trunc%2CNumber.isInteger%2CNumber.isFinite%2CNumber.isNaN%2CNumber.parseFloat%2CNumber.parseInt%2CObject.assign%2CObject.create%2CObject.keys%2CObject.values%2CPromise%2CPromise.prototype.finally%2CString.prototype.fontcolor%2CString.prototype.fontsize%2CString.prototype.includes%2CString.prototype.italics%2CString.prototype.link%2CString.prototype.replaceAll%2CString.prototype.trim%2CWindow%2CXMLHttpRequest%2Cdocument%2Cdocument.getElementsByClassName%2Cdocument.querySelector%2Cdocument.visibilityState%2Cfetch%2CgetComputedStyle%2CinnerHeight%2CinnerWidth%2CpageXOffset%2CpageYOffset%2CrequestAnimationFrame%2Cscroll%2CscrollBy%2CscrollIntoView%2CscrollX%2CscrollY%2Csmoothscroll%2Cviewport%2Cwindow.scroll%2Cwindow.scrollBy" defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="miniJeux.js"></script>
+</body>
+</html>
